@@ -1,0 +1,72 @@
+/* Importing lato font */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+/* Reset all default configuration */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+  color: #f0f9ff;
+  height: 100vh;
+  width: 100%;
+  background-color: #164e63;
+}
+/* Styling introduction application */
+.introdutionApplication {
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  margin-top: 200px;
+  display: inline-block;
+  opacity: 0;
+  animation: animatedText 5s forwards;
+  font-size: 48px;
+  word-spacing: 10px;
+}
+p {
+  display: inline-block;
+  letter-spacing: 2px;
+}
+.explanationApplication {
+  font-size: 24px;
+  margin-left: 40px;
+  margin-top: 100px;
+  opacity: 0;
+  animation: animatedText 5s forwards 3s;
+}
+.buttonOptions {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.btn {
+  text-align: center;
+  background-color: #bae6fd;
+  padding: 20px 40px;
+  border-radius: 100px;
+  color: #000;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+  animation: appearBtn 3s forwards 6s;
+  opacity: 0;
+}
+@keyframes animatedText {
+  0% {
+    transform: translateX(0px);
+  }
+  80% {
+    transform: translateX(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(180px);
+  }
+}
+@keyframes appearBtn {
+  100% {
+    opacity: 1;
+  }
+}

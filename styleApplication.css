@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+
+  background-color: #0ea5e9;
+}
+h1 {
+  text-align: center;
+  color: #ffffffff;
+  animation: opacityAnimation 5s forwards;
+  margin-top: 100px;
+}
+@keyframes opacityAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
