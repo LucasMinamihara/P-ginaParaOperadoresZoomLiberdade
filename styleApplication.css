@@ -6,14 +6,13 @@
 
 body {
   width: 100%;
-
-  background-color: #0ea5e9;
+  background-color: #4c1d95;
 }
 h1 {
   text-align: center;
   color: #ffffffff;
   animation: opacityAnimation 5s forwards;
-  margin-top: 100px;
+  margin: 20px;
 }
 @keyframes opacityAnimation {
   0% {
@@ -22,4 +21,41 @@ h1 {
   100% {
     opacity: 1;
   }
+}
+.containerApplication {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  text-align: center;
+  justify-items: center;
+  opacity: 0;
+  animation: opacityAnimation 5s forwards;
+  animation-delay: 2s;
+}
+.card {
+  border-radius: 10px;
+  border: 2px solid #ffffffff;
+  box-shadow: 0 10px 20px #22d3ee;
+  width: 180px;
+  height: 200px;
+  cursor: pointer;
+  background-color: #000;
+}
+/* Do a animation with card after element */
+.card::after {
+  box-shadow: 0px 20px 30px #ffffffff;
+  transition: 0.3s;
+}
+.card:hover::after {
+  opacity: 1;
+}
+img {
+  margin-top: 5px;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+p {
+  padding: 10px;
+  color: #ffffffff;
 }
