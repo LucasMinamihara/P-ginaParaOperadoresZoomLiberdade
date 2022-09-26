@@ -17,7 +17,7 @@ async function start() {
   await actualLogin;
   exportando(actualLogin);
 }
-
+// Need fix export error on console
 export default function exportando(actualLogin) {
   location.href = "countPage.html";
   return actualLogin;
